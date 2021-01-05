@@ -35,7 +35,7 @@ y0 = reg.predict(x)
 ### PREDUCTION ###
 day_future = int(input('Give me the number of days: '))
 print(f'Prediction-cases after {day_future} days from {len(data)} is :', end='')
-print(round(int(reg.predict(polyFeat.fit_transform([[len(data)+day_future]])))/1000000,3), 'Million Cases')
+print(round(int(reg.predict(polyFeat.fit_transform([[len(data)+day_future]])))/1000,3), 'Thousands Cases')
 
 
 ## Number of days ##
